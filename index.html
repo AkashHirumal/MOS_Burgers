@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOS BURGERS</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <style>
+      body,
+      html {
+        /* background-image: url(Images/background.png); */
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100%;
+      }
+
+      .container {
+        display: flex;
+        height: 100%;
+      }
+
+      .sidebar {
+        width: 80px;
+        background-color: #222;
+        color: white;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        width: 130px !important;
+        height: 70px !important;
+        margin-bottom: 100px;
+        margin-top: 30px;
+      }
+
+      .sidebar a {
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #ffc400;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease; 
+      }
+
+      .sidebar a:hover {
+        width: 120px;
+        background-color: #ffdf76;
+        color: aliceblue;
+        transform: translateX(10px); 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+      }
+
+      .sidebar img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease;
+      }
+
+      .sidebar a:hover img {
+        transform: scale(1.1); 
+      }
+
+      .sidebar span {
+        margin-left: 10px;
+        font-size: 14px;
+        color: #000;
+        font-weight: bold;
+        opacity: 0; 
+        transition: opacity 0.3s ease;
+      }
+
+      .sidebar a:hover span {
+        opacity: 1; 
+      }
+
+      .frame {
+        flex-grow: 1;
+      }
+
+      #contentFrame {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .footer {
+        background-color: #000000;
+        position: fixed;
+        bottom: 10px;
+        left: 130px;
+        color: white;
+        height: 25px;
+        font-size: 12px;
+      }
+    </style>
+    <script>
+      function loadPage(page) {
+        document.getElementById("contentFrame").src = page;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar" style="width: 130px">
+        <img src="img/MOS_BURGER.png" alt="" class="logo" />
+        <a href="#" onclick="loadPage('menu.html')">
+          <img src="img/Fast Cart.png" alt="Menu" class="side-item" />
+          <span>Menu</span>
+        </a>
+        <a href="#" onclick="loadPage('orders.html')">
+          <img src="img/Order Completed.png" alt="Orders" class="side-item" />
+          <span>Orders</span>
+        </a>
+        <a href="#" onclick="loadPage('items.html')">
+          <img src="img/Fast Cart.png" alt="Items" class="side-item" />
+          <span>Items</span>
+        </a>
+        <a href="#" onclick="loadPage('customers.html')">
+          <img src="img/Search Client.png" alt="Customers" class="side-item" />
+          <span>Customers</span>
+        </a>
+        <a href="#" onclick="loadPage('reports.html')">
+          <img
+            src="img/Add Pie Chart Report.png"
+            alt="Reports"
+            class="side-item"
+          />
+          <span>Reports</span>
+        </a>
+
+        <div class="footer">
+          <p>@2024...Akash Hirumal</p>
+        </div>
+      </div>
+      <div class="frame">
+        <iframe id="contentFrame" src="menu.html"></iframe>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #000000;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    padding: 20px 0;
+    margin: 0 0 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000000;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Form Styles */
+form label {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="number"], form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border-color: #ffc400;
+    outline: none;
+    box-shadow: 0 0 4px #ffc400(0, 123, 255, 0.5);
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #ffc400;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #000000;
+    color: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+/* Table Styles */
+.table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #000000;
+}
+
+thead{
+    background-color: #000000;
+    color: #ffc400;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+/* Image and Action Buttons */
+.item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.actions button {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.actions button.edit {
+    background-color: #28a745;
+    color: white;
+}
+
+.actions button.edit:hover {
+    background-color: #218838;
+}
+
+.actions button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.actions button.delete:hover {
+    background-color: #c82333;
+}
+
+/* Search Input */
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    form input {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px 12px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .actions button {
+        margin: 5px 0;
+        width: 100%;
+    }
+}

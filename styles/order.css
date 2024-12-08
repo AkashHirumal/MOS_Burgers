@@ -1,0 +1,115 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    color: #ffc400;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Container and Table Styles */
+.container {
+    margin-top: 20px;
+    max-width: 1100px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #ffffff;
+}
+
+.table thead th {
+    background-color: #000000;
+    color: #ffc400;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 15px;
+}
+
+.table tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #eaf2f8;
+    cursor: pointer;
+}
+
+.table td, .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Button Styles */
+button {
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button.action-edit {
+    background-color: #5bc0de;
+    color: #ffffff;
+}
+
+button.action-edit:hover {
+    background-color: #31b0d5;
+}
+
+button.action-delete {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+button.action-delete:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}

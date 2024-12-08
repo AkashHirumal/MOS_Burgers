@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/itemStyles.css">
+</head>
+<body>
+    <h1 class="text-center text-white bg-dark py-3 mb-4">Item Management</h1><br>
+    <div class="container mt-4 item-card">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2>Add New Item</h2>
+                <form id="itemForm">
+                    <div class="mb-3">
+                        <label for="itemno" class="form-label">Item Number:</label>
+                        <input type="text" class="form-control" id="itemno" name="itemno" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="itemtype" class="form-label">Item Type:</label>
+                        <input type="text" class="form-control" id="itemtype" name="itemtype" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Item Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price:</label>
+                        <input type="number" class="form-control" id="price" name="price" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Image:</label>
+                        <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+                    </div>
+                    <!-- <button type="submit" class="btn btn-primary">Add Item</button> -->
+                    <button type="submit" class="btnAddItem">Add Item</button>
+                </form>
+            </div>
+            
+            <div class="col-md-6">
+                <h2>Item List</h2>
+                <div class="mb-3">
+                    <label for="searchInput" class="form-label">Search Item:</label>
+                    <input type="text" class="form-control" id="searchInput" onkeyup="searchItem()" placeholder="Search by name...">
+                </div>
+                <div class="table-responsive table-wrapper">
+                    <table id="itemTable"class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Item Number</th>
+                                <th>Item Type</th>
+                                <th>Name</th>
+                                <th>Price(Rs.)</th>
+                                <th>Image</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/itemScripts.js"></script>
+</body>
+</html>

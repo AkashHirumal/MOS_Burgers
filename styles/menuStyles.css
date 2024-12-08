@@ -1,0 +1,164 @@
+/* General Styling */
+body {
+    background-image: linear-gradient(to bottom, #000000, #1a1a1a);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+}
+
+/* Menu Section */
+#menu {
+    flex: 7;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+/* Category Buttons */
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid #ffc400;
+    border-radius: 15px;
+    background-color: #000;
+    color: #ffc400;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    min-width: 100px;
+}
+
+.category-btn i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background-color: #ffc400;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Menu Content */
+#menu-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#menu-content div {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffc400;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#menu-content div:hover {
+    transform: scale(1.05);
+    background-color: #ffc400;
+    color: #000;
+}
+
+/* Card Image Styling */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* Shopping Cart */
+#shopping-cart {
+    flex: 3;
+    padding: 1.5rem;
+    background-color: #000000;
+    color: #ffffff;
+    border-left: 2px solid #ffc400;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Buttons in Shopping Cart */
+#calculateTotal,
+#placeOrder {
+    background-color: #ffc400;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#calculateTotal:hover,
+#placeOrder:hover {
+    background-color: #ffae00;
+    transform: scale(1.1);
+}
+
+/* Input Fields */
+#customer-info input,
+#shopping-cart input[type="number"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#customer-info input::placeholder,
+input[type="number"]::placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+/* Total Price */
+.total-price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffc400;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #shopping-cart {
+        border-left: none;
+        border-top: 2px solid #ffc400;
+        max-height: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .cart-item input {
+        width: 40px;
+    }
+}
