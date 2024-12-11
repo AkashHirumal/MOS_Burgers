@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MOS BURGERS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles/index.css" />
     <style>
       body,
@@ -56,7 +57,6 @@
       .sidebar a:hover {
         width: 120px;
         background-color: #ffdf76;
-        color: aliceblue;
         transform: translateX(10px); 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
       }
@@ -116,33 +116,33 @@
       <div class="sidebar" style="width: 130px">
         <img src="img/MOS_BURGER.png" alt="" class="logo" />
         <a href="#" onclick="loadPage('menu.html')">
-          <img src="img/Fast Cart.png" alt="Menu" class="side-item" />
+          <img src="img/Menu.png" alt="Orders" class="side-item" />
           <span>Menu</span>
         </a>
         <a href="#" onclick="loadPage('orders.html')">
-          <img src="img/Order Completed.png" alt="Orders" class="side-item" />
-          <span>Orders</span>
+          <img src="img/orderFood.png" alt="Orders" class="side-item" />
+          <span>View Orders</span>
         </a>
         <a href="#" onclick="loadPage('items.html')">
-          <img src="img/Fast Cart.png" alt="Items" class="side-item" />
-          <span>Items</span>
+          <img src="img/addFood.png" alt="add Items" class="side-item" />
+          <span>Add Items</span>
         </a>
         <a href="#" onclick="loadPage('customers.html')">
-          <img src="img/Search Client.png" alt="Customers" class="side-item" />
+          <img src="img/addCustomer.png" alt="Customers" class="side-item" />
           <span>Customers</span>
         </a>
         <a href="#" onclick="loadPage('reports.html')">
           <img
-            src="img/Add Pie Chart Report.png"
+            src="img/Report.png"
             alt="Reports"
             class="side-item"
           />
           <span>Reports</span>
         </a>
 
-        <div class="footer">
+        <!-- <div class="footer">
           <p>@2024...Akash Hirumal</p>
-        </div>
+        </div> -->
       </div>
       <div class="frame">
         <iframe id="contentFrame" src="menu.html"></iframe>

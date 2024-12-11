@@ -1,0 +1,324 @@
+[
+    {
+        "itemno": "B1001",
+        "itemtype": "Burger",
+        "name": "Classic Burger (Large)",
+        "price": "750.00",
+        "imageUrl": "https://thespiceway.com/cdn/shop/files/Signature_Savory_Classic_Burger.jpg?v=1712161801"
+    },
+    {
+        "itemno": "B1002",
+        "itemtype": "Burger",
+        "name": "Classic Burger (Regular)",
+        "price": "1500.00",
+        "imageUrl": "https://res.cloudinary.com/fatty-butts-bbq/images/f_auto,q_auto/v1691068713/fattybuttsbbq/Smoked-Hamburgers/Smoked-Hamburgers.jpg?_i=AA"
+    },
+    {
+        "itemno": "B1003",
+        "itemtype": "Burger",
+        "name": "Turkey Burger",
+        "price": "1600.00",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG7q424s6Y9rsiy8H3FTrRlKnel4dDgGKNMQ&s"
+    },
+    {
+        "itemno": "B1004",
+        "itemtype": "Burger",
+        "name": "Chicken Burger (Large)",
+        "price": "1400.00",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTey9L2TACFbrnGg_t02FSz28hauH5RXU9xQ&s"
+    },
+    {
+        "itemno": "B1005",
+        "itemtype": "Burger",
+        "name": "Chicken Burger (Regular)",
+        "price": "800.00",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi4kmRq92ECw6KxUJtITnRrxzOQY9XfL5l6w&s"
+    },
+    {
+        "itemno": "B1006",
+        "itemtype": "Burger",
+        "name": "Cheese Burger (Large)",
+        "price": "1000.00",
+        "imageUrl": "https://img.freepik.com/premium-photo/big-mac-chicken-cheese-burger-wooden-tray_78502-486.jpg?w=360"
+    },
+    {
+        "itemno": "B1007",
+        "itemtype": "Burger",
+        "name": "Cheese Burger (Regular)",
+        "price": "600.00",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL200fxsCV33Q6o8Muw8ylcC6yXK2EIArvqg&s"
+    },
+    {
+        "itemno": "B1008",
+        "itemtype": "Burger",
+        "name": "Bacon Burger",
+        "price": "650.00",
+        "imageUrl": "https://theninjacue.com/wp-content/uploads/2023/03/25-erin_hungsberg-0r4a6119-bacon-jam-burger-23-2-scaled.jpg"
+    },
+    {
+        "itemno": "B1009",
+        "itemtype": "Burger",
+        "name": "Shawarma Burger",
+        "price": "800.00",
+        "imageUrl": "https://www.southernliving.com/thmb/H04pCVJ5bLAnwPs2hFCmpNs5Uec=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ultimate-southern-burger_batch64_beauty01-86-b9c26e256dd34e39b6c0cfb0c02a9fef.jpg"
+    },
+    {
+        "itemno": "B1010",
+        "itemtype": "Burger",
+        "name": "Olive Burger",
+        "price": "1800.00",
+        "imageUrl": "https://www.southernliving.com/thmb/H04pCVJ5bLAnwPs2hFCmpNs5Uec=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ultimate-southern-burger_batch64_beauty01-86-b9c26e256dd34e39b6c0cfb0c02a9fef.jpg"
+    },
+    {
+        "itemno": "B1012",
+        "itemtype": "Burger",
+        "name": "Double-Cheese Burger",
+        "price": "1250.00",
+        "imageUrl": "https://www.southernliving.com/thmb/H04pCVJ5bLAnwPs2hFCmpNs5Uec=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ultimate-southern-burger_batch64_beauty01-86-b9c26e256dd34e39b6c0cfb0c02a9fef.jpg"
+    },
+    {
+        "itemno": "B1013",
+        "itemtype": "Burger",
+        "name": "Crispy Chicken Burger (Regular)",
+        "price": "1200.00",
+        "imageUrl": "https://www.southernliving.com/thmb/H04pCVJ5bLAnwPs2hFCmpNs5Uec=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ultimate-southern-burger_batch64_beauty01-86-b9c26e256dd34e39b6c0cfb0c02a9fef.jpg"
+    },
+    {
+        "itemno": "B1014",
+        "itemtype": "Burger",
+        "name": "Crispy Chicken Burger (Large)",
+        "price": "1600.00",
+        "imageUrl": "https://www.southernliving.com/thmb/H04pCVJ5bLAnwPs2hFCmpNs5Uec=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ultimate-southern-burger_batch64_beauty01-86-b9c26e256dd34e39b6c0cfb0c02a9fef.jpg"
+    },
+    {
+        "itemno": "B1015",
+        "itemtype": "Burger",
+        "name": "Paneer Burger",
+        "price": "900.00",
+        "imageUrl": "https://www.southernliving.com/thmb/H04pCVJ5bLAnwPs2hFCmpNs5Uec=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ultimate-southern-burger_batch64_beauty01-86-b9c26e256dd34e39b6c0cfb0c02a9fef.jpg"
+    },
+    {
+        "itemno": "B1016", 
+        "itemtype": "Submarine", 
+        "name": "Crispy Chicken Submarine (Large)", 
+        "price": "2000.00", 
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4zT_18o4oSBYuYryV38oow_s8ISw-lTmaA&s"
+    },
+    {
+        "itemno": "B1017", 
+        "itemtype": "Submarine", 
+        "name": "Crispy Chicken Submarine (Regular)", 
+        "price": "1500.00", 
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4zT_18o4oSBYuYryV38oow_s8ISw-lTmaA&s"
+    },
+    {
+        "itemno": "B1018", 
+        "itemtype": "Submarine", 
+        "name": "Chicken Submarine (Large)", 
+        "price": "1800.00", 
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4zT_18o4oSBYuYryV38oow_s8ISw-lTmaA&s"
+    },
+    {
+        "itemno": "B1019", 
+        "itemtype": "Submarine", 
+        "name": "Chicken Submarine (Regular)", 
+        "price": "1400.00", 
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4zT_18o4oSBYuYryV38oow_s8ISw-lTmaA&s"
+    },
+    {
+        "itemno": "B1020", 
+        "itemtype": "Submarine", 
+        "name": "Grinder Submarine", 
+        "price": "2300.00", 
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4zT_18o4oSBYuYryV38oow_s8ISw-lTmaA&s"
+    },
+    {
+        "itemno": "B1021", 
+        "itemtype": "Submarine", 
+        "name": "Cheese Submarine", 
+        "price": "2200.00", 
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4zT_18o4oSBYuYryV38oow_s8ISw-lTmaA&s"
+    },
+    {
+        "itemno": "B1022", 
+        "itemtype": "Submarine", 
+        "name": "Double Cheese n Chicken Submarine", 
+        "price": "1900.00", 
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4zT_18o4oSBYuYryV38oow_s8ISw-lTmaA&s"
+    },
+    {
+        "itemno": "B1023", 
+        "itemtype": "Submarine", 
+        "name": "Special Horgie Submarine", 
+        "price": "2800.00", 
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4zT_18o4oSBYuYryV38oow_s8ISw-lTmaA&s"
+    },
+    {
+        "itemno": "B1024", 
+        "itemtype": "Submarine", 
+        "name": "MOS Special Submarine ", 
+        "price": "3000.00", 
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4zT_18o4oSBYuYryV38oow_s8ISw-lTmaA&s"
+    },
+    {
+        "itemno": "B1025", 
+        "itemtype": "Fries", 
+        "name": "Steak Fries (Large)", 
+        "price": "1200.00", 
+        "imageUrl": "https://www.acouplecooks.com/wp-content/uploads/2022/06/Cheese-Fries-005.jpg"
+    },
+    {
+        "itemno": "B1026", 
+        "itemtype": "Fries", 
+        "name": "Steak Fries (Medium)", 
+        "price": "600.00", 
+        "imageUrl": "https://www.acouplecooks.com/wp-content/uploads/2022/06/Cheese-Fries-005.jpg"
+    },
+    {
+        "itemno": "B1027", 
+        "itemtype": "Fries", 
+        "name": "French Fries (Large)", 
+        "price": "800.00", 
+        "imageUrl": "https://www.acouplecooks.com/wp-content/uploads/2022/06/Cheese-Fries-005.jpg"
+    },
+    {
+        "itemno": "B1028", 
+        "itemtype": "Fries", 
+        "name": "French Fries (Medium)", 
+        "price": "650.00", 
+        "imageUrl": "https://www.acouplecooks.com/wp-content/uploads/2022/06/Cheese-Fries-005.jpg"
+    },
+    {
+        "itemno": "B1029", 
+        "itemtype": "Fries", 
+        "name": "French Fries (Small)", 
+        "price": "450.00", 
+        "imageUrl": "https://www.acouplecooks.com/wp-content/uploads/2022/06/Cheese-Fries-005.jpg"
+    },
+    {
+        "itemno": "B1030", 
+        "itemtype": "Fries", 
+        "name": "Sweet Potato Fries (Large)", 
+        "price": "600.00", 
+        "imageUrl": "https://www.acouplecooks.com/wp-content/uploads/2022/06/Cheese-Fries-005.jpg"
+    },
+    {
+        "itemno": "B1031",
+        "itemtype": "Pasta",
+        "name": "Chicken n Cheese Pasta",
+        "price": "1600.00",
+        "imageUrl": "https://modernmealmakeover.com/wp-content/uploads/2020/12/DSC01293.jpg"
+    },
+    {
+        "itemno": "B1032",
+        "itemtype": "Pasta",
+        "name": "Chicken Penne Pasta",
+        "price": "1700.00",
+        "imageUrl": "https://modernmealmakeover.com/wp-content/uploads/2020/12/DSC01293.jpg"
+    },
+    {
+        "itemno": "B1033",
+        "itemtype": "Pasta",
+        "name": "Ground Turkey Pasta Bake",
+        "price": "2900.00",
+        "imageUrl": "https://modernmealmakeover.com/wp-content/uploads/2020/12/DSC01293.jpg"
+    },
+    {
+        "itemno": "B1034",
+        "itemtype": "Pasta",
+        "name": "Creamy Shrimp Pasta",
+        "price": "2000.00",
+        "imageUrl": "https://modernmealmakeover.com/wp-content/uploads/2020/12/DSC01293.jpg"
+    },
+    {
+        "itemno": "B1035",
+        "itemtype": "Pasta",
+        "name": "Lemon Butter Pasta",
+        "price": "1950.00",
+        "imageUrl": "https://modernmealmakeover.com/wp-content/uploads/2020/12/DSC01293.jpg"
+    },
+    {
+        "itemno": "B1036",
+        "itemtype": "Pasta",
+        "name": "Tagliatelle Pasta",
+        "price": "2400.00",
+        "imageUrl": "https://modernmealmakeover.com/wp-content/uploads/2020/12/DSC01293.jpg"
+    },
+    {
+        "itemno": "B1037",
+        "itemtype": "Pasta",
+        "name": "Baked Ravioli",
+        "price": "2900.00",
+        "imageUrl": "https://modernmealmakeover.com/wp-content/uploads/2020/12/DSC01293.jpg"
+    },
+    {
+        "itemno": "B1038",
+        "itemtype": "Chicken",
+        "name": "Fried Chicken (Small)",
+        "price": "1200.00",
+        "imageUrl": "https://thissillygirlskitchen.com/wp-content/uploads/2020/05/Southern-Fried-Chicken-20-500x500.jpg"
+    },
+    {
+        "itemno": "B1039",
+        "itemtype": "Chicken",
+        "name": "Fried Chicken (Regular)",
+        "price": "2300.00",
+        "imageUrl": "https://images.getrecipekit.com/20240103192542-buffalo-chicken-wings.jpg?width=650&quality=90&"
+    },
+    {
+        "itemno": "B1040",
+        "itemtype": "Chicken",
+        "name": "Fried Chicken (Large)",
+        "price": "3100.00",
+        "imageUrl": "https://static01.nyt.com/images/2024/01/10/multimedia/10Korean-Fried-Chicken-lfcg/10Korean-Fried-Chicken-lfcg-superJumbo.jpg"
+    },
+    {
+        "itemno": "B1041",
+        "itemtype": "Chicken",
+        "name": "Hot Wings (Large)",
+        "price": "2400.00",
+        "imageUrl": "https://yestoyolks.com/wp-content/uploads/2020/09/IMG_3745.jpg"
+    },
+    {
+        "itemno": "B1042",
+        "itemtype": "Chicken",
+        "name": "Devilled Chicken (Large)",
+        "price": "900.00",
+        "imageUrl": "https://media.30seconds.com/tip/lg/Sr-Lankan-Deviled-Chicken-21500-072f0c162d-1617328178.jpg"
+    },
+    {
+        "itemno": "B1043",
+        "itemtype": "Chicken",
+        "name": "BBQ Chicken (Regular)",
+        "price": "2100.00",
+        "imageUrl": "https://grilledcheesesocial.com/wp-content/uploads/2024/06/bbq-chicken-thighs-recipe-thumbnail.jpg"
+    },
+    {
+        "itemno": "B1044",
+        "itemtype": "Beverage",
+        "name": "Pepsi (330ml)",
+        "price": "990.00",
+        "imageUrl": "https://assets-global.website-files.com/63b4dfd34fd227d85e61c2ab/64f2027bdbffae8a63511c94_PEP_Packaging_CanLineup.png"
+    },
+    {
+        "itemno": "B1045",
+        "itemtype": "Beverage",
+        "name": "Coca-Cola (330ml)",
+        "price": "1230.00",
+        "imageUrl": "https://craftyconnoisseur.co.uk/wp-content/uploads/2023/10/Untitled-design.jpeg"
+    },
+    {
+        "itemno": "B1046",
+        "itemtype": "Beverage",
+        "name": "Sprite (330ml)",
+        "price": "1500.00",
+        "imageUrl": "https://static.thcdn.com/images/medium/original/widgets/190-en/31/D2C-GB_SpriteFenix_TwoItemEditorial-Image_070223-121431.png"
+    },
+    {
+        "itemno": "B1047",
+        "itemtype": "Beverage",
+        "name": "Fanta (330ml)",
+        "price": "870.00",
+        "imageUrl": "https://creativereview.imgix.net/content/uploads/2023/04/fanta-branding-8.jpg"
+    }
+]
