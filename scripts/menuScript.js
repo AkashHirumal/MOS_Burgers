@@ -3,20 +3,7 @@ let items = [];
 let cart = [];
 let orders = [];
 
-// Load menu items from JSON file
-// function loadItemsFromJSON() {
-//     if (JSON.parse(localStorage.getItem('items'))) {
-//         items = JSON.parse(localStorage.getItem('items'))
-//     } else {
-//         return fetch('items.json')
-//             .then(response => response.json())
-//             .then(data => {
-//                 items = data;
-//             })
-//             .catch(error => console.error('Error loading items:', error));
-//     }
 
-// }
 function loadItemsFromJSON() {
     return new Promise((resolve, reject) => {
         if (localStorage.getItem('items')) {
