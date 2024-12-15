@@ -80,8 +80,8 @@ function addItemToTable(item, index) {
         <td>${item.price}</td>
         <td><img src="${item.imageUrl}" alt="${item.name}" class="item-image"></td>
         <td>
-            <button class="btn btn-sm btn-outline-primary" onclick="editItem(${index})">✏️</button>
-            <button class="btn btn-sm btn-outline-danger" onclick="deleteItem(${index})">🗑️</button>
+            <button class="btn btn-sm btn-outline-primary" onclick="editItem(${index})">Edit</button>
+            <button class="btn btn-sm btn-outline-danger" onclick="deleteItem(${index})">Delet</button>
         </td>
     `;
 
@@ -99,8 +99,8 @@ function updateItemInTable(index, updatedItem) {
         <td>${updatedItem.price}</td>
         <td><img src="${updatedItem.imageUrl}" alt="${updatedItem.name}" class="item-image"></td>
         <td>
-            <button class="btn btn-sm btn-outline-primary" onclick="editItem(${index})">✏️</button>
-            <button class="btn btn-sm btn-outline-danger" onclick="deleteItem(${index})">🗑️</button>
+            <button class="btn btn-sm btn-outline-primary" onclick="editItem(${index})">Edit</button>
+            <button class="btn btn-sm btn-outline-danger" onclick="deleteItem(${index})">Delet</button>
         </td>
     `;
 }

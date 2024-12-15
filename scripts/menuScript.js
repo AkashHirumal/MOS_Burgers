@@ -103,7 +103,7 @@ function renderMenu(filterItems) {
                             </div>
                             <div class="col-md- cdiscription"> 
                                 <h3 class="titleItem">${item.name}</h3>
-                                <p class="priceItem"><b>Price :</b>: ${item.price}</p>
+                                <p class="priceItem"><b>Price :</b> ${item.price}</p>
                                 <button  class="btn btn-add-item" onclick="addToCart(${index})">Add to Cart</button>
                             </div>
                         </div>
@@ -150,10 +150,10 @@ function renderCart() {
         const cartItemElem = document.createElement('div');
         cartItemElem.classList.add('cart-item');
         cartItemElem.innerHTML = `
-            <span>${cartItem.name} - Rs.${cartItem.price}</span>
-            <input type="number" value="${cartItem.quantity}" min="1" onchange="updateQuantity(${index}, this.value)">
-            <span>Rs.${(parseFloat(cartItem.price) * cartItem.quantity).toFixed(2)}</span>
-            <button class="btn btn-danger btn-remove" onclick="removeFromCart(${index})">Remove</button>
+            <span>${cartItem.name} - Rs.${cartItem.price}</span><br>
+            <br><input type="number" class="qtyValue" value="${cartItem.quantity}" min="1" onchange="updateQuantity(${index}, this.value)">
+            <span class="oneTotlePrice">Rs.${(parseFloat(cartItem.price) * cartItem.quantity).toFixed(2)}</span>
+            <button class="btn btn-danger btn-remove" onclick="removeFromCart(${index})">Remove</button><br><br>
         `;
         cartItems.appendChild(cartItemElem);
         totalPrice += parseFloat(cartItem.price) * cartItem.quantity;
@@ -244,4 +244,18 @@ window.onload = function () {
 document.getElementById('calculateTotal').addEventListener('click', showTotal);
 document.getElementById('placeOrder').addEventListener('click', placeOrder);
 
+$('.order').click(function (e) {
+
+    let button = $(this);
+  
+    if (!button.hasClass('animate')) {
+      button.addClass('animate');
+      setTimeout(() => {
+        button.removeClass('animate');
+      }, 10000);
+    }
+  
+  });
+
 loadItemsFromJSON();
+

@@ -53,8 +53,8 @@ function addCustomerToTable(customer, index) {
         <td>${customer.phone}</td>
         <td>${customer.address}</td>
         <td class="actions">
-            <button onclick="editCustomer(${index})">✏️</button>
-            <button onclick="deleteCustomer(${index})">🗑️</button>
+            <button onclick="editCustomer(${index})">Edit</button>
+            <button onclick="deleteCustomer(${index})">Delet</button>
         </td>
     `;
 

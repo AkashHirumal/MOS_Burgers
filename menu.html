@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/menuStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap'>
 </head>
 <body>
 
@@ -46,10 +49,10 @@
 
     <!-- Shopping Cart Section -->
     <div id="shopping-cart">
-        <h2>Shopping Cart</h2>
+        <h4 class="titelCart">Shopping Cart</h4>
         <div id="customer-info" class="mb-3">
             <div class="mb-2">
-                <label for="existingCustomer" class="form-label">Select Existing Customer</label>
+                <label for="existingCustomer" class="form-label titelCart">Select Existing Customer</label>
                 <select id="existingCustomer" class="form-select" onchange="fillCustomerInfo()">
                     <option value="">-- Select a customer --</option>
                 </select>
@@ -72,12 +75,28 @@
             <input type="text" id="discount" class="form-control" placeholder="Enter discount amount" min="0">
         </div>
         <button id="calculateTotal" class="btn btn-primary">Calculate Total</button>
-        <button id="placeOrder" style="margin-left: 20px;" class="btn btn-success">Place Order</button>
+        <!-- <button id="placeOrder" style="margin-left: 20px;" class="btn btn-success">Place Order</button> -->
+        <button id="placeOrder" class="order"><span class="default">Complete Order</span><span class="success">Order Placed
+            <svg viewbox="0 0 12 10">
+              <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+            </svg></span>
+          <div class="box"></div>
+          <div class="truck">
+            <div class="back"></div>
+            <div class="front">
+              <div class="window"></div>
+            </div>
+            <div class="light top"></div>
+            <div class="light bottom"></div>
+          </div>
+          <div class="lines"></div>
+          </button>
     </div>
 </div>
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script src="scripts/menuScript.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 
 </body>
 </html>
