@@ -131,3 +131,4 @@ function populateItemTable(sortedItems) {
         `;
     });
 }
+
