@@ -53,8 +53,22 @@ function addCustomerToTable(customer, index) {
         <td>${customer.phone}</td>
         <td>${customer.address}</td>
         <td class="actions">
-            <button onclick="editCustomer(${index})">Edit</button>
-            <button onclick="deleteCustomer(${index})">Delet</button>
+            <button onclick="editCustomer(${index})" class="button-custom-pushable" role="button">
+                <span class="button-custom-shadow"></span>
+                <span class="button-custom-edge"></span>
+                <span class="button-custom-front text">
+                    Edit
+                </span>
+            </button>
+            
+            <button onclick="deleteCustomer(${index})" class="button-82-pushable" role="button">
+                <span class="button-82-shadow"></span>
+                <span class="button-82-edge"></span>
+                <span class="button-82-front text">
+                    Delete
+                </span>
+            </button>
+           
         </td>
     `;
 

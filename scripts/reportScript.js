@@ -132,3 +132,120 @@ function populateItemTable(sortedItems) {
     });
 }
 
+function generatePDFReport() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({
+        orientation: 'landscape',
+        unit: 'mm',
+        format: 'a4'
+    });
+
+    const pageWidth = doc.internal.pageSize.width;
+    const pageHeight = doc.internal.pageSize.height;
+
+    function addHeader() {
+        doc.setFontSize(18);
+        doc.setTextColor(0, 0, 0); // Set text color to black
+        doc.text("MOS BURGERS", pageWidth / 2, 10, { align: 'center' });
+        doc.setFontSize(14);
+        doc.setTextColor(0, 0, 0); // Set text color to black
+        doc.text("Daily Order Report", pageWidth / 2, 20, { align: 'center' });
+        doc.setFontSize(10);
+        doc.text(`Report generated on: ${new Date().toLocaleString()}`, pageWidth / 2, 25, { align: 'center' });
+    }
+
+    function addFooter(pageNumber) {
+        doc.setFontSize(10);
+        doc.setTextColor(0, 0, 0); // Set text color to black
+        doc.text("Burger Shop - Tasty burgers, happy customers!", pageWidth / 2, pageHeight - 10, { align: 'center' });
+        doc.text(`Page ${pageNumber}`, pageWidth - 10, pageHeight - 10, { align: 'right' });
+        doc.text("www.burgershop.lk", 10, pageHeight - 10);
+    }
+    
+
+    let yPos = 35;
+    let pageNumber = 1;
+
+    addHeader();
+    addFooter(pageNumber);
+
+    function addTableToPDF(title, tableId, columns) {
+        if (yPos > pageHeight - 40) {
+            doc.addPage();
+            pageNumber++;
+            yPos = 35;
+            addHeader();
+            addFooter(pageNumber);
+        }
+
+        doc.setFontSize(14);
+        doc.setTextColor(0, 0, 0); // Set text color to black
+        doc.text(title, 14, yPos);
+        yPos += 10;
+        
+        const table = document.getElementById(tableId);
+        const data = [];
+        
+        const headers = Array.from(table.querySelectorAll('th')).map(th => th.textContent);
+
+        Array.from(table.querySelectorAll('tbody tr')).forEach(row => {
+            const rowData = Array.from(row.querySelectorAll('td')).map(td => td.textContent);
+            data.push(rowData);
+        });
+
+        doc.autoTable({
+            head: [headers],
+            body: data,
+            startY: yPos,
+            theme: 'grid',
+            styles: { fontSize: 8, cellPadding: 2 },
+            headStyles: { fillColor: [0, 0, 0], textColor: [255, 255, 255] }, // Set header background to black and text color to white
+            columnStyles: columns,
+            margin: { top: 30, left: 10, right: 10, bottom: 20 },
+            tableWidth: 'auto',
+            didDrawPage: function (data) {
+                addHeader();
+                addFooter(pageNumber);
+            }
+        });
+        
+        yPos = doc.lastAutoTable.finalY + 20;
+    }
+    
+    addTableToPDF("Customers with Most Orders", "customerTable", {
+        0: { cellWidth: 'auto' },
+        1: { cellWidth: 'auto' }
+    });
+    
+    if (yPos > pageHeight - 40) {
+        doc.addPage();
+        pageNumber++;
+        yPos = 35;
+        addHeader();
+        addFooter(pageNumber);
+    }
+
+    addTableToPDF("Most Popular Items for the Day", "itemTable", {
+        0: { cellWidth: 'auto' },
+        1: { cellWidth: 'auto' }
+    });
+
+    if (yPos > pageHeight - 40) {
+        doc.addPage();
+        pageNumber++;
+        yPos = 35;
+        addHeader();
+        addFooter(pageNumber);
+    }
+
+    addTableToPDF("Transaction History for Today", "transactionTable", {
+        0: { cellWidth: 'auto' },
+        1: { cellWidth: 'auto' },
+        2: { cellWidth: 'auto' }
+    });
+    
+    doc.save("MOS_BURGERS_DailyOrderReport.pdf");
+}
+
+
+document.getElementById('generatePDFButton').addEventListener('click', generatePDFReport);

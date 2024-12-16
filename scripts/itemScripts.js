@@ -80,8 +80,21 @@ function addItemToTable(item, index) {
         <td>${item.price}</td>
         <td><img src="${item.imageUrl}" alt="${item.name}" class="item-image"></td>
         <td>
-            <button class="btn btn-sm btn-outline-primary" onclick="editItem(${index})">Edit</button>
-            <button class="btn btn-sm btn-outline-danger" onclick="deleteItem(${index})">Delet</button>
+            <button onclick="editItem(${index})" class="button-custom-pushable" role="button">
+                <span class="button-custom-shadow"></span>
+                <span class="button-custom-edge"></span>
+                <span class="button-custom-front text">
+                    Edit
+                </span>
+            </button>
+            
+            <button onclick="deleteItem(${index})" class="button-82-pushable" role="button">
+                <span class="button-82-shadow"></span>
+                <span class="button-82-edge"></span>
+                <span class="button-82-front text">
+                    Delete
+                </span>
+            </button>
         </td>
     `;
 
@@ -99,8 +112,22 @@ function updateItemInTable(index, updatedItem) {
         <td>${updatedItem.price}</td>
         <td><img src="${updatedItem.imageUrl}" alt="${updatedItem.name}" class="item-image"></td>
         <td>
-            <button class="btn btn-sm btn-outline-primary" onclick="editItem(${index})">Edit</button>
-            <button class="btn btn-sm btn-outline-danger" onclick="deleteItem(${index})">Delet</button>
+            <button onclick="editItem(${index})" class="button-custom-pushable" role="button">
+                <span class="button-custom-shadow"></span>
+                <span class="button-custom-edge"></span>
+                <span class="button-custom-front text">
+                    Edit
+                </span>
+            </button>
+            
+            <button onclick="deleteItem(${index})" class="button-82-pushable" role="button">
+                <span class="button-82-shadow"></span>
+                <span class="button-82-edge"></span>
+                <span class="button-82-front text">
+                    Delete
+                </span>
+            </button>
+           
         </td>
     `;
 }
