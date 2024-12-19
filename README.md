@@ -10,15 +10,15 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://i.postimg.cc/Y2PY3LQd/Screenshot-182.png" alt="project-screenshot" width="400" height="200/">
+<img src="https://i.postimg.cc/Y2PY3LQd/Screenshot-182.png" alt="project-screenshot" width="350" height="200/">
 
-<img src="https://i.postimg.cc/rpqrm1Lw/Screenshot-183.png" alt="project-screenshot" width="200" height="200/">
+<img src="https://i.postimg.cc/rpqrm1Lw/Screenshot-183.png" alt="project-screenshot" width="350" height="200/">
 
-<img src="https://i.postimg.cc/2SRvppcv/Screenshot-184.png" alt="project-screenshot" width="300" height="200/">
+<img src="https://i.postimg.cc/2SRvppcv/Screenshot-184.png" alt="project-screenshot" width="350" height="200/">
 
-<img src="https://i.postimg.cc/dV2CwWpf/Screenshot-186.png" alt="project-screenshot" width="200" height="200/">
+<img src="https://i.postimg.cc/dV2CwWpf/Screenshot-186.png" alt="project-screenshot" width="350" height="200/">
 
-<img src="https://i.postimg.cc/nLTQQXHY/Screenshot-188.png" alt="project-screenshot" width="200" height="200/">
+<img src="https://i.postimg.cc/nLTQQXHY/Screenshot-188.png" alt="project-screenshot" width="350" height="200/">
 
 
   
